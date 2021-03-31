@@ -1,0 +1,7 @@
+{
+  "name": "my-exo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
