@@ -5,7 +5,7 @@ const routes: Routes = [
  
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'accueil',
     pathMatch: 'full'
   },
   /*{
@@ -15,6 +15,10 @@ const routes: Routes = [
   {
     path: 'first-page/:id',
     loadChildren: () => import('./first-page/first-page.module').then( m => m.FirstPagePageModule)
+  },
+  {
+    path: 'accueil',
+    loadChildren: () => import('./accueil/accueil.module').then( m => m.AccueilPageModule)
   }
   
 ];
