@@ -9,7 +9,9 @@ import { ActivatedRoute } from '@angular/router';
 export class FirstPagePage implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute) { }
+
   public name: string;
+  
   ngOnInit() {
     this.name = this.activatedRoute.snapshot.paramMap.get('id');
   }
