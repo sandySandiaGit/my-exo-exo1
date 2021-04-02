@@ -7,10 +7,12 @@
 
   <h3>My Chrono !</h3>
 
-  <!--essayer de créer des pipes pour remplacer les *ngIf !!!!-->
-  <h1><span *ngIf="min<10; else minToTen">0{{min}}:</span><span *ngIf="sec<10; else secToTen">0{{sec}}</span><span *ngIf="centiSec<10; else centiSecToTen">:0{{centiSec}}</span>
 
-  <span><ng-template #minToTen>{{min}}:</ng-template><ng-template #secToTen>{{sec}}</ng-template></span><span><ng-template #centiSecToTen>:{{centiSec}}</ng-template></span></h1>
+  <h1>{{min | timeFormat}}:{{sec | timeFormat}}:{{centiSec | timeFormat}}</h1>
+  <!--essayer de créer des pipes pour remplacer les *ngIf !!!!-->
+  <!--<h1><span *ngIf="min<10; else minToTen">0{{min}}:</span><span *ngIf="sec<10; else secToTen">0{{sec}}</span><span *ngIf="centiSec<10; else centiSecToTen">:0{{centiSec}}</span>
+
+  <span><ng-template #minToTen>{{min}}:</ng-template><ng-template #secToTen>{{sec}}</ng-template></span><span><ng-template #centiSecToTen>:{{centiSec}}</ng-template></span></h1>-->
 
   <ion-buttons>
     <ion-button fill="solid" [color]="startIsEnable ? 'primary' : 'danger'" [disabled]="!startIsEnable" (click)="start()">start</ion-button>

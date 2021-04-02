@@ -20,7 +20,7 @@ public startIsEnable:boolean = true;
 public stopIsEnable:boolean = false;
 public resetIsEnable:boolean = false;
 
-/*centiSec = (this.centiSec<10) ? `0${centiSec}` : centiSec;ne fx par car conflit str/number!!*/
+/*centiSec = (this.centiSec<10) ? `0${centiSec}` : centiSec;ne fx pas car conflit str/number!!*/
 
   constructor() { }
 
